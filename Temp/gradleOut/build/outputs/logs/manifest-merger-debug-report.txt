@@ -1,69 +1,67 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-27:12
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-26:12
 MERGED from [:arcore_client:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/3059932990f3835051e628943045e1b7/AndroidManifest.xml:17:1-46:12
 MERGED from [:unityandroidpermissions:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unityandroidpermissions.aar/f3e8502095a4ed7cef7ae57d5d899327/AndroidManifest.xml:6:1-15:12
 MERGED from [:unitylibrary-debug:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:70-100
 		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
 		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
 	android:versionName
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:125-150
 		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-27:12
-		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
-	xmlns:tools
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:101-147
-	android:versionCode
-		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-27:12
 		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:101-124
+		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
 	android:installLocation
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:148-188
-supports-screens
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:3-163
-	android:largeScreens
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:78-105
-	android:smallScreens
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:21-48
-	android:normalScreens
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:49-77
-	android:xlargeScreens
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:106-134
-	android:anyDensity
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:135-160
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:2:151-191
+uses-sdk
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:3-72
+INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:3-72
+INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:3-72
+MERGED from [:arcore_client:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/3059932990f3835051e628943045e1b7/AndroidManifest.xml:26:5-28:41
+MERGED from [:arcore_client:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/3059932990f3835051e628943045e1b7/AndroidManifest.xml:26:5-28:41
+MERGED from [:unityandroidpermissions:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unityandroidpermissions.aar/f3e8502095a4ed7cef7ae57d5d899327/AndroidManifest.xml:11:5-13:41
+MERGED from [:unityandroidpermissions:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unityandroidpermissions.aar/f3e8502095a4ed7cef7ae57d5d899327/AndroidManifest.xml:11:5-13:41
+MERGED from [:unitylibrary-debug:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/AndroidManifest.xml:25:5-27:41
+MERGED from [:unitylibrary-debug:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/AndroidManifest.xml:25:5-27:41
+INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:3-72
+INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:3-72
+	android:targetSdkVersion
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:40-69
+		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:3:13-39
+		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
 application
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:4:3-17:17
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:4:3-16:17
 MERGED from [:arcore_client:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/3059932990f3835051e628943045e1b7/AndroidManifest.xml:30:5-44:19
 MERGED from [:arcore_client:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/3059932990f3835051e628943045e1b7/AndroidManifest.xml:30:5-44:19
 	android:label
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:4:90-122
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:4:16-48
 	android:icon
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:4:58-89
-	android:theme
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:4:16-57
-activity#com.unity3d.player.UnityPlayerActivity
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:5:5-11:16
-	android:screenOrientation
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:5:102-139
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:4:49-80
+activity#com.plugin.speech.pluginlibrary.ActivityClass
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:5:5-10:16
 	android:label
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:5:69-101
-	android:launchMode
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:5:140-171
-	android:hardwareAccelerated
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:5:354-389
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:5:234-266
 	android:configChanges
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:5:172-353
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:5:76-233
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:5:15-68
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:5:15-75
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:6:7-9:23
 action#android.intent.action.MAIN
@@ -74,112 +72,86 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:8:9-69
 	android:name
 		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:8:19-66
-meta-data#unityplayer.UnityActivity
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:10:7-82
-	android:value
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:10:59-79
-	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:10:18-58
 meta-data#unity.build-id
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:12:5-101
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:11:5-101
 	android:value
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:12:46-98
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:11:46-98
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:12:16-45
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:11:16-45
 meta-data#unity.splash-mode
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:13:5-69
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:12:5-69
 	android:value
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:13:49-66
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:12:49-66
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:13:16-48
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:12:16-48
 meta-data#unity.splash-enable
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:14:5-74
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:13:5-74
 	android:value
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:14:51-71
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:13:51-71
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:14:16-50
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:13:16-50
 meta-data#unityplayer.SkipPermissionsDialog
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:15:5-88
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:14:5-88
 	android:value
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:15:65-85
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:14:65-85
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:15:16-64
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:14:16-64
 meta-data#com.google.ar.core
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:16:5-77
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:15:5-77
 	android:value
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:16:50-74
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:15:50-74
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:16:16-49
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:15:16-49
 uses-feature#0x00020000
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:18:3-52
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:17:3-52
 	android:glEsVersion
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:18:17-49
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:17:17-49
 uses-permission#android.permission.INTERNET
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:19:3-65
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:18:3-65
 MERGED from [:unitylibrary-debug:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/AndroidManifest.xml:29:5-67
 MERGED from [:unitylibrary-debug:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/AndroidManifest.xml:29:5-67
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:19:20-62
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:18:20-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:20:3-106
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:19:3-106
 	android:maxSdkVersion
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:20:77-103
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:19:77-103
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:20:20-76
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:19:20-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:21:3-105
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:20:3-105
 	android:maxSdkVersion
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:21:76-102
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:20:76-102
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:21:20-75
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:20:20-75
 uses-feature#android.hardware.touchscreen
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:22:3-88
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:21:3-88
 	android:required
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:22:61-85
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:21:61-85
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:22:17-60
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:21:17-60
 uses-feature#android.hardware.touchscreen.multitouch
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:23:3-99
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:22:3-99
 	android:required
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:23:72-96
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:22:72-96
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:23:17-71
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:22:17-71
 uses-feature#android.hardware.touchscreen.multitouch.distinct
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:24:3-108
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:23:3-108
 	android:required
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:24:81-105
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:23:81-105
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:24:17-80
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:23:17-80
 uses-permission#android.permission.CAMERA
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:25:3-63
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:24:3-63
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:25:20-60
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:24:20-60
 uses-feature#android.hardware.camera.ar
-ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:26:3-85
+ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:25:3-85
 	android:required
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:26:59-82
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:25:59-82
 	android:name
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:26:17-58
-uses-sdk
-INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
-INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
-MERGED from [:arcore_client:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/3059932990f3835051e628943045e1b7/AndroidManifest.xml:26:5-28:41
-MERGED from [:arcore_client:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/3059932990f3835051e628943045e1b7/AndroidManifest.xml:26:5-28:41
-MERGED from [:unityandroidpermissions:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unityandroidpermissions.aar/f3e8502095a4ed7cef7ae57d5d899327/AndroidManifest.xml:11:5-13:41
-MERGED from [:unityandroidpermissions:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unityandroidpermissions.aar/f3e8502095a4ed7cef7ae57d5d899327/AndroidManifest.xml:11:5-13:41
-MERGED from [:unitylibrary-debug:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/AndroidManifest.xml:25:5-27:41
-MERGED from [:unitylibrary-debug:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/AndroidManifest.xml:25:5-27:41
-INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
-INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
-	android:targetSdkVersion
-		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
-		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
-		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
-		INJECTED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml
+		ADDED from /Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/AndroidManifest.xml:25:17-58
 activity#com.google.ar.core.InstallActivity
 ADDED from [:arcore_client:] /Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/3059932990f3835051e628943045e1b7/AndroidManifest.xml:33:9-39:80
 	android:excludeFromRecents

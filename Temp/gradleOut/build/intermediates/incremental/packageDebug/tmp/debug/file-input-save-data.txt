@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Dec 18 02:21:16 EST 2018
+#Tue Dec 18 02:54:41 EST 2018
 124.path=bin/Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll
 60.set=ASSET
 52.set=ASSET

@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BrowserView.cs" />
     <Compile Include="Assets\Scripts\HitTest.cs" />
+    <Compile Include="Assets\Scripts\SpeechController.cs" />
     <Compile Include="Assets\Scripts\UnityThread.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

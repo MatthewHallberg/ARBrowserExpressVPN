@@ -2,8 +2,8 @@ Android
 PlayerPath?
 /Users/matthewhallberg/Desktop/arTest.apk
 SceneListBegin?
-Assets/Scenes/ARTEST.unity
 Assets/Scenes/main.unity
+Assets/Scenes/ARTEST.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -308,3 +308,4 @@ e1c35cdce946e9da77fe80a39c261608 Unity.XR.ARFoundation.dll:UnityEngine.XR.ARFoun
 20d20168517d1c0e098918311aa95bbb Unity.XR.ARFoundation.dll:UnityEngine.XR.ARFoundation.ARCameraBackground
 8a980b2cfac38c97173400d74564f92d Assembly-CSharp.dll:.HitTest
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.UnityThread
+85428ea7eb8266da49cda56636ead2fe Assembly-CSharp.dll:.SpeechController

@@ -1,4 +1,4 @@
-#Tue Dec 18 02:21:16 EST 2018
+#Tue Dec 18 02:54:40 EST 2018
 base.0=/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/transforms/dexMerger/debug/0
 path.1=classes.dex
 renamed.1=classes2.dex
