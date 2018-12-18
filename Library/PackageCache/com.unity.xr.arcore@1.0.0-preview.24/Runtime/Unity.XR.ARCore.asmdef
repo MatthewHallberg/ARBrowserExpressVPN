@@ -1,0 +1,13 @@
+{
+    "name": "Unity.XR.ARCore",
+    "references": [
+        "Unity.XR.ARExtensions"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Android",
+        "Editor"
+   ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

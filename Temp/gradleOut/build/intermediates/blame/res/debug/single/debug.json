@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/raw_keep.xml.flat",
+        "source": "/Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/3059932990f3835051e628943045e1b7/res/raw/keep.xml"
+    },
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-anydpi-v26_app_icon_round.xml.flat",
+        "source": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/res/mipmap-anydpi-v26/app_icon_round.xml"
+    },
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-mdpi_app_icon.png.flat",
+        "source": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/res/mipmap-mdpi/app_icon.png"
+    },
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-anydpi-v26_app_icon.xml.flat",
+        "source": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/res/mipmap-anydpi-v26/app_icon.xml"
+    },
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/src/main/res/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/layout_extralayouts.xml.flat",
+        "source": "/Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/res/layout/extralayouts.xml"
+    },
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/layout_fragment_layout.xml.flat",
+        "source": "/Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/res/layout/fragment_layout.xml"
+    },
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/raw_point_vertex_shader.glsl.flat",
+        "source": "/Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/res/raw/point_vertex_shader.glsl"
+    },
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/raw_point_fragment_shader.glsl.flat",
+        "source": "/Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/res/raw/point_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/raw_per_pixel_vertex_shader.glsl.flat",
+        "source": "/Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/res/raw/per_pixel_vertex_shader.glsl"
+    },
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/raw_per_pixel_fragment_shader.glsl.flat",
+        "source": "/Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/unitylibrary-debug.aar/d0874077b9b3bcc85798232f4e1d6812/res/raw/per_pixel_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/res/merged/debug/layout___arcore_education.xml.flat",
+        "source": "/Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/3059932990f3835051e628943045e1b7/res/layout/__arcore_education.xml"
+    }
+]

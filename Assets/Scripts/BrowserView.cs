@@ -9,8 +9,6 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-
-
 public class BrowserView : MonoBehaviour {
 
     private RawImage _rawImage;

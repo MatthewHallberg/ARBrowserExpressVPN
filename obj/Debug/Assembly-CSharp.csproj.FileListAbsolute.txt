@@ -118,10 +118,6 @@
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/System.Xml.XmlSerializer.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/System.Xml.XPath.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/System.Xml.XPath.XDocument.dll
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.Analytics.DataPrivacy.dll
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.Analytics.Editor.dll
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.Analytics.StandardEvents.dll
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.Analytics.Tracker.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.CollabProxy.Editor.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.Locator.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.PackageManagerUI.Editor.dll
@@ -129,8 +125,6 @@
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.TextMeshPro.Editor.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEditor.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.AccessibilityModule.dll
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.Advertisements.dll
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.Advertisements.Editor.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.AIModule.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.AnimationModule.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.ARModule.dll
@@ -216,7 +210,6 @@
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.PackageManagerUI.Editor.pdb
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.CollabProxy.Editor.pdb
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.TextMeshPro.pdb
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.Analytics.DataPrivacy.pdb
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.AIModule.dll.mdb
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.AIModule.xml
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.ARModule.dll.mdb
@@ -349,9 +342,6 @@
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.GoogleAudioSpatializer.xml
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.SpatialTracking.dll.mdb
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.SpatialTracking.xml
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.Analytics.Tracker.dll.mdb
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.Analytics.Editor.dll.mdb
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Unity.Analytics.StandardEvents.dll.mdb
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.ClusterInputModule.dll.mdb
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.ClusterInputModule.xml
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEngine.ClusterRendererModule.dll.mdb
@@ -361,3 +351,11 @@
 /Users/matthewhallberg/GoogleAR/obj/Debug/Assembly-CSharp.csproj.CopyComplete
 /Users/matthewhallberg/GoogleAR/obj/Debug/Assembly-CSharp.dll
 /Users/matthewhallberg/GoogleAR/obj/Debug/Assembly-CSharp.pdb
+/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Vuforia.UnityExtensions.Editor.dll
+/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Boo.Lang.dll
+/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEditor.UI.dll
+/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/VuforiaScripts.pdb
+/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/VuforiaEditorScripts.pdb
+/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Vuforia.UnityExtensions.Editor.xml
+/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEditor.UI.dll.mdb
+/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEditor.UI.xml

@@ -1,0 +1,10 @@
+{
+    "name": "Unity.XR.ARFoundation",
+    "references": [
+        "Unity.XR.ARExtensions", 
+        "Unity.XR.FaceSubsystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+  	"allowUnsafeCode": true
+}

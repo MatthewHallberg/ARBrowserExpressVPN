@@ -8,8 +8,7 @@ using UnityEngine;
 using System.Collections.Generic;
 
 
-public class UnityThread : MonoBehaviour
-{
+public class UnityThread : MonoBehaviour {
     //our (singleton) instance
     private static UnityThread instance = null;
 
@@ -49,19 +48,15 @@ public class UnityThread : MonoBehaviour
 
 
     //Used to initialize UnityThread. Call once before any function here
-    public static void initUnityThread(bool visible = false)
-    {
-        if (instance != null)
-        {
+    public static void initUnityThread(bool visible = false) {
+        if (instance != null) {
             return;
         }
 
-        if (Application.isPlaying)
-        {
+        if (Application.isPlaying) {
             // add an invisible game object to the scene
             GameObject obj = new GameObject("MainThreadExecuter");
-            if (!visible)
-            {
+            if (!visible) {
                 obj.hideFlags = HideFlags.HideAndDontSave;
             }
 
@@ -70,47 +65,38 @@ public class UnityThread : MonoBehaviour
         }
     }
 
-    public void Awake()
-    {
+    public void Awake() {
         DontDestroyOnLoad(gameObject);
     }
 
     //////////////////////////////////////////////COROUTINE IMPL//////////////////////////////////////////////////////
 #if (ENABLE_UPDATE_FUNCTION_CALLBACK)
-    public static void executeCoroutine(IEnumerator action)
-    {
-        if (instance != null)
-        {
+    public static void executeCoroutine(IEnumerator action) {
+        if (instance != null) {
             executeInUpdate(() => instance.StartCoroutine(action));
         }
     }
 
     ////////////////////////////////////////////UPDATE IMPL////////////////////////////////////////////////////
-    public static void executeInUpdate(System.Action action)
-    {
-        if (action == null)
-        {
+    public static void executeInUpdate(System.Action action) {
+        if (action == null) {
             throw new ArgumentNullException("action");
         }
 
-        lock (actionQueuesUpdateFunc)
-        {
+        lock (actionQueuesUpdateFunc) {
             actionQueuesUpdateFunc.Add(action);
             noActionQueueToExecuteUpdateFunc = false;
         }
     }
 
-    public void Update()
-    {
-        if (noActionQueueToExecuteUpdateFunc)
-        {
+    public void Update() {
+        if (noActionQueueToExecuteUpdateFunc) {
             return;
         }
 
         //Clear the old actions from the actionCopiedQueueUpdateFunc queue
         actionCopiedQueueUpdateFunc.Clear();
-        lock (actionQueuesUpdateFunc)
-        {
+        lock (actionQueuesUpdateFunc) {
             //Copy actionQueuesUpdateFunc to the actionCopiedQueueUpdateFunc variable
             actionCopiedQueueUpdateFunc.AddRange(actionQueuesUpdateFunc);
             //Now clear the actionQueuesUpdateFunc since we've done copying it
@@ -119,8 +105,7 @@ public class UnityThread : MonoBehaviour
         }
 
         // Loop and execute the functions from the actionCopiedQueueUpdateFunc
-        for (int i = 0; i < actionCopiedQueueUpdateFunc.Count; i++)
-        {
+        for (int i = 0; i < actionCopiedQueueUpdateFunc.Count; i++) {
             actionCopiedQueueUpdateFunc[i].Invoke();
         }
     }
@@ -211,10 +196,8 @@ public class UnityThread : MonoBehaviour
     }
 #endif
 
-    public void OnDisable()
-    {
-        if (instance == this)
-        {
+    public void OnDisable() {
+        if (instance == this) {
             instance = null;
         }
     }

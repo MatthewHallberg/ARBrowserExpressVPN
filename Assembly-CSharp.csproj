@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BrowserView.cs" />
+    <Compile Include="Assets\Scripts\HitTest.cs" />
     <Compile Include="Assets\Scripts\UnityThread.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -74,8 +75,29 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    <Reference Include="Unity.XR.FaceSubsystem">
+      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.FaceSubsystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Subsystem.Registration">
+      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARFoundation.Editor">
+      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARFoundation">
+      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARExtensions">
+      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.ARExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARExtensions.Editor">
+      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.ARExtensions.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARCore">
+      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARCore.Editor">
+      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2018.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -277,21 +299,6 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>/Applications/Unity/Hub/Editor/2018.3.0f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Hub/Editor/2018.3.0f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

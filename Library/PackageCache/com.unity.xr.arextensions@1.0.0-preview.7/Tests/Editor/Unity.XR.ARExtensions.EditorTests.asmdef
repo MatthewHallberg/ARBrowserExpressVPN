@@ -1,0 +1,14 @@
+{
+    "name": "Unity.XR.ARExtensions.EditorTests",
+    "references": [
+        "Unity.XR.ARExtensions.Editor",
+        "Unity.XR.ARExtensions"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

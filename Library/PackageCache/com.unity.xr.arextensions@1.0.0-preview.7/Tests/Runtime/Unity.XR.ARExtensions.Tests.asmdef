@@ -1,0 +1,11 @@
+{
+    "name": "Unity.XR.ARExtensions.Tests",
+    "references": [
+        "Unity.XR.ARExtensions"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

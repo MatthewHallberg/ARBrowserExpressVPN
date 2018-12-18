@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="__arcore_cancel">キャンセル</string>
+    <string name="__arcore_continue">続行</string>
+    <string name="__arcore_install_app">このアプリを使用するには最新バージョンの ARCore が必要です。</string>
+    <string name="__arcore_install_feature">この機能を使用するには最新バージョンの ARCore が必要です。</string>
+    <string name="__arcore_installing">ARCore をインストールしています…</string>
+</resources>
