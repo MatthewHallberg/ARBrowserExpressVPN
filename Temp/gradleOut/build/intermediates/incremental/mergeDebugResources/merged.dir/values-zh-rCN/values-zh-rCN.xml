@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="__arcore_cancel">取消</string>
-    <string name="__arcore_continue">继续</string>
-    <string name="__arcore_install_app">您必须安装最新版本的 ARCore 才能使用此应用。</string>
-    <string name="__arcore_install_feature">您必须安装最新版本的 ARCore 才能使用此功能。</string>
-    <string name="__arcore_installing">正在安装 ARCore…</string>
-</resources>

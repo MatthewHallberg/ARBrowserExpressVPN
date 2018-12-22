@@ -75,7 +75,6 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\PreprocessBuildBase.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\RequiredOptionalPreprocessBuild.cs" />
     <None Include="Assets\GoogleARCore\Editor\ARCoreiOSDependencies.template" />
-    <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.95.0.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -333,18 +332,6 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.IOSResolver_v1.2.95.0">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.95.0.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.VersionHandler">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.VersionHandlerImpl_v1.2.95.0">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.95.0.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.JarResolver_v1.2.95.0">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.95.0.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2018.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

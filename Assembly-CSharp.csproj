@@ -202,9 +202,11 @@
     <Compile Include="Assets\Scripts\BrowserView.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\UnityThread.cs" />
+    <Compile Include="Assets\Scripts\VoiceController.cs" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
+    <None Include="Assets\README.txt" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PointCloud.shader" />
     <None Include="Assets\GoogleARCore\Examples\ComputerVision\Materials\EdgeDetectionBackground.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileSpecularWithLightEstimation.shader" />

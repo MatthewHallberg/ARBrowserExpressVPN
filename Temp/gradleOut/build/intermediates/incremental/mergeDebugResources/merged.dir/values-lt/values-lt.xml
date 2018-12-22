@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="__arcore_cancel">Atšaukti</string>
-    <string name="__arcore_continue">Tęsti</string>
-    <string name="__arcore_install_app">Norint naudoti šią programą reikalinga naujausios versijos „ARCore“.</string>
-    <string name="__arcore_install_feature">Norint naudoti šią funkciją reikalinga naujausios versijos „ARCore“.</string>
-    <string name="__arcore_installing">Įdiegiama „ARCore“…</string>
-</resources>

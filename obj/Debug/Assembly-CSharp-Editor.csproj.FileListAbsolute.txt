@@ -1,10 +1,6 @@
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Assembly-CSharp-Editor.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Assembly-CSharp-Editor.pdb
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Boo.Lang.dll
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Google.IOSResolver_v1.2.95.0.dll
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Google.JarResolver_v1.2.95.0.dll
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Google.VersionHandler.dll
-/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Google.VersionHandlerImpl_v1.2.95.0.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Microsoft.CSharp.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Microsoft.Win32.Primitives.dll
 /Users/matthewhallberg/GoogleAR/Temp/bin/Debug/mscorlib.dll
