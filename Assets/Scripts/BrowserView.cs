@@ -12,6 +12,8 @@ public class BrowserView : MonoBehaviour {
     const string GOOGLE_SEARCH = "https://www.google.com/search?q=";
     const string URI = "http://198.252.105.8:3000/getImage";
 
+    public Material screenMat;
+
     Texture2D tempTex;
 
     private void Start() {
@@ -22,8 +24,8 @@ public class BrowserView : MonoBehaviour {
         StartCoroutine(GetImageFromURL("http://www.google.com/"));
     }
 
-    public void VisitSite(string site) {
-        StartCoroutine(GetImageFromURL(site));
+    public void SearchGoogle(string query) {
+        StartCoroutine(GetImageFromURL(GOOGLE_SEARCH + query));
     }
 
     IEnumerator GetImageFromURL(string url) {
@@ -35,7 +37,7 @@ public class BrowserView : MonoBehaviour {
         } else {
             tempTex.LoadImage(www.downloadHandler.data);
             tempTex.EncodeToPNG();
-            GetComponent<Renderer>().material.mainTexture = tempTex;
+            screenMat.mainTexture = tempTex;
         }
     }
 }

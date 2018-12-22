@@ -3,11 +3,7 @@
     using GoogleARCore;
     using GoogleARCore.Examples.Common;
     using UnityEngine;
-
-#if UNITY_EDITOR
-    // Set up touch input propagation while using Instant Preview in the editor.
-    using Input = InstantPreviewInput;
-#endif
+    using UnityEngine.EventSystems;
 
     public class ARController : MonoBehaviour {
         Camera FirstPersonCamera;
@@ -18,37 +14,31 @@
 
         // Update is called once per frame
         void Update() {
+            // Check if there is a touch
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
+                // Check if finger is over a UI element
+                if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId)) {
+                    // Raycast against the location the player touched to search for planes.
+                    TrackableHit hit;
+                    TrackableHitFlags raycastFilter = TrackableHitFlags.Default;
+                    Vector3 pos = Input.mousePosition;
+                    if (Frame.Raycast(pos.x, pos.y, raycastFilter, out hit)) {
+                        // Use hit pose and camera pose to check if hittest is from the
+                        // back of the plane, if it is, no need to create the anchor.
+                        if ((hit.Trackable is DetectedPlane) &&
+                            Vector3.Dot(FirstPersonCamera.transform.position - hit.Pose.position,
+                                hit.Pose.rotation * Vector3.up) < 0) {
+                            Debug.Log("Hit at back of the current DetectedPlane");
+                        } else {
 
-            // If the player has not touched the screen, we are done with this update.
-            Touch touch;
-            if (Input.touchCount < 1 || (touch = Input.GetTouch(0)).phase != TouchPhase.Began) {
-                return;
-            }
+                            transform.position = hit.Pose.position;
+                            transform.rotation = hit.Pose.rotation;
 
-            Debug.Log("HERE~~~~~~");
-            // Raycast against the location the player touched to search for planes.
-            TrackableHit hit;
-            TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
-                TrackableHitFlags.FeaturePointWithSurfaceNormal;
+                            var anchor = hit.Trackable.CreateAnchor(hit.Pose);
 
-            if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit)) {
-                // Use hit pose and camera pose to check if hittest is from the
-                // back of the plane, if it is, no need to create the anchor.
-                if ((hit.Trackable is DetectedPlane) &&
-                    Vector3.Dot(FirstPersonCamera.transform.position - hit.Pose.position,
-                        hit.Pose.rotation * Vector3.up) < 0) {
-                    Debug.Log("Hit at back of the current DetectedPlane");
-                } else {
-
-                    transform.position = hit.Pose.position;
-                    transform.rotation = hit.Pose.rotation;
-
-                    // Create an anchor to allow ARCore to track the hitpoint as understanding of the physical
-                    // world evolves.
-                    var anchor = hit.Trackable.CreateAnchor(hit.Pose);
-
-                    // Make Andy model a child of the anchor.
-                    transform.parent = anchor.transform;
+                            transform.parent = anchor.transform;
+                        }
+                    }
                 }
             }
         }
