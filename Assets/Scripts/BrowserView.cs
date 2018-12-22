@@ -20,11 +20,23 @@ public class BrowserView : MonoBehaviour {
         tempTex = new Texture2D(2, 2);
     }
 
-    public void VisitGoogle() {
+    public void ProcessQuery(string query) {
+        query = query.ToLower();
+        if (query.Equals("google") || query.Equals("home")) {
+            VisitGoogle();
+        } else {
+            SearchGoogle(query);
+        }
+
+        //stop loading animation
+        AnimLoading.Instance.ShouldLoad(false);
+    }
+
+    void VisitGoogle() {
         StartCoroutine(GetImageFromURL("http://www.google.com/"));
     }
 
-    public void SearchGoogle(string query) {
+    void SearchGoogle(string query) {
         StartCoroutine(GetImageFromURL(GOOGLE_SEARCH + query));
     }
 

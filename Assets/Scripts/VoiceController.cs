@@ -6,18 +6,15 @@ using UnityEngine.UI;
 public class VoiceController : MonoBehaviour {
 
     public BrowserView browser;
+    public Text debugText;
 
-    public void onActivityResult(string recognizedText) {
-        char[] delimiterChars = { '~' };
-        string[] result = recognizedText.Split(delimiterChars);
-        browser.SearchGoogle(result[0]);
+    AndroidJavaClass pluginClass = new AndroidJavaClass("com.plugin.speech.pluginlibrary.TestPlugin");
+
+    private void Start() {
+        InitPlugin();
     }
 
-    public void GetSpeech() {
-
-        AndroidJavaClass pluginClass = new AndroidJavaClass("com.plugin.speech.pluginlibrary.TestPlugin");
-        Debug.Log("Call 1 Started");
-
+    void InitPlugin() {
         // Pass the name of the game object which has the onActivityResult(string recognizedText) attached to it.
         pluginClass.CallStatic("setReturnObject", "VoiceToText");
         Debug.Log("Return Object Set");
@@ -35,13 +32,20 @@ public class VoiceController : MonoBehaviour {
         // The following line sets the question which appears on intent over the microphone icon
         pluginClass.CallStatic("changeQuestion", "Hello, How can I help you???");
         Debug.Log("Question Set");
+    }
 
+    public void onActivityResult(string recognizedText) {
+        char[] delimiterChars = { '~' };
+        string[] result = recognizedText.Split(delimiterChars);
+//        browser.ProcessQuery(result[0]);
+        debugText.text = result[0];
+    }
 
-        Debug.Log("Call 2 Started");
+    public void GetSpeech() {
+        //play loading animation
+//      AnimLoading.Instance.ShouldLoad(true);
 
         // Calls the function from the jar file
         pluginClass.CallStatic("promptSpeechInput");
-
-        Debug.Log("Call End");
     }
 }

@@ -14,6 +14,7 @@
 
         // Update is called once per frame
         void Update() {
+
             // Check if there is a touch
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
                 // Check if finger is over a UI element
