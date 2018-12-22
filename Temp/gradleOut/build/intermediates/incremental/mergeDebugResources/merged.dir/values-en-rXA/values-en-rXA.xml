@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="__arcore_cancel">[Çåñçéļ one]</string>
-    <string name="__arcore_continue">[Çöñţîñûé one]</string>
-    <string name="__arcore_install_app">[Ţĥîš åþþļîçåţîöñ ŕéqûîŕéš ţĥé ļåţéšţ véŕšîöñ öƒ ÅŔÇöŕé. one two three four five six seven eight nine ten eleven]</string>
-    <string name="__arcore_install_feature">[Ţĥîš ƒéåţûŕé ŕéqûîŕéš ţĥé ļåţéšţ véŕšîöñ öƒ ÅŔÇöŕé. one two three four five six seven eight nine ten eleven]</string>
-    <string name="__arcore_installing">[Îñšţåļļîñĝ ÅŔÇöŕé… one two three]</string>
-</resources>

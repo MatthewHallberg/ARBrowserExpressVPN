@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{451D088F-F008-01CA-154E-93F7798C1F85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SpeechController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BrowserView.cs">
     <Files>
-      <File FileName="Assets/Scripts/SpeechController.cs" Line="50" Column="36" />
+      <File FileName="Assets/Scripts/BrowserView.cs" Line="14" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

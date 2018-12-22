@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="__arcore_cancel">Kanselleer</string>
-    <string name="__arcore_continue">Gaan voort</string>
-    <string name="__arcore_install_app">Hierdie program vereis die jongste weergawe van ARCore.</string>
-    <string name="__arcore_install_feature">Hierdie funksie vereis die jongste weergawe van ARCore.</string>
-    <string name="__arcore_installing">Installeer tans ARCore …</string>
-</resources>

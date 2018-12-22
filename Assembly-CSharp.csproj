@@ -60,10 +60,153 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GoogleARCore\Examples\AugmentedImage\Scripts\AugmentedImageExampleController.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\AugmentedImage\Scripts\AugmentedImageVisualizer.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\AnchorController.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\ARCoreWorldOriginHelper.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\ARKitHelper.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\CloudAnchorsExampleController.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\LocalPlayerController.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\MultiplatformMeshSelector.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\CloudAnchors\Scripts\NetworkManagerUIController.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\Common\Scripts\DetectedPlaneGenerator.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\Common\Scripts\DetectedPlaneVisualizer.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\Common\Scripts\PointcloudVisualizer.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\ComputerVisionController.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\EdgeDetector.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\PointClickHandler.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\TextureReader.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\TextureReaderApi.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\HelloAR\Scripts\HelloARController.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewInput.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewManager.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewTrackedPoseDriver.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewWarning.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Anchor.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\AndroidPermissionsManager.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\AndroidPermissionsRequestResult.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\NativeSession.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiApkInstallationStatus.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiApkInstallStatusExtensions.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiArStatus.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiArStatusExtensions.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiAvailability.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiAvailabilityExtensions.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiCameraFocusMode.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiCameraMetadata.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiCloudAnchorMode.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiCloudAnchorState.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiCloudAnchorStateExtensions.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiConstants.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiDisplayUvCoords.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiDisplayUvCoordsExtensions.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiFeaturePointOrientationMode.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiFeaturePointOrientationModeExtensions.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiLightEstimateState.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiLightEstimateStateExtensions.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiLightEstimationMode.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPlaneFindingMode.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPlaneType.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPlaneTypeExtensions.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPoseData.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPrestoConfig.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPrestoStatus.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiPrestoStatusExtensions.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiTrackableType.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiTrackingState.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiTrackingStateExtensions.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiTrackingStateXPExtensions.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Types\ApiUpdateMode.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\AnchorApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\AugmentedImageApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\AugmentedImageDatabaseApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\CameraApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\CameraConfigApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\CameraConfigListApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\CameraMetadataApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\FrameApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\HitTestApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\ImageApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\LightEstimateApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\PlaneApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\PointApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\PointCloudApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\PoseApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\SessionApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\SessionConfigApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\TrackableApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\Wrappers\TrackableListApi.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\ApkAvailabilityStatus.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\ApkInstallationStatus.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\ARCoreBackgroundRenderer.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\ARCoreSession.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\ARCoreSessionConfig.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Async\WaitForTaskCompletionYieldInstruction.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\AsyncTask.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\AugmentedImage.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\AugmentedImageDatabase.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\AugmentedImageDatabaseEntry.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\CameraConfig.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\CameraFocusMode.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\CameraImageBytes.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\CameraIntrinsics.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\CameraMetadataTag.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\CameraMetadataValue.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\CloudAnchorResult.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\CloudServiceResponse.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Deprecated\TrackedPlane.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Deprecated\TrackedPoint.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Deprecated\TrackedPointOrientationMode.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\DetectedPlane.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\DetectedPlaneFindingMode.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\DetectedPlaneType.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\DisplayUvCoords.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\EnvironmentalLight.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\ExperimentSupport\ExperimentBase.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\ExperimentSupport\ExperimentManager.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\FeaturePoint.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\FeaturePointOrientationMode.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Frame.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\LightEstimate.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\LightEstimateState.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\ARCoreAndroidLifecycleManager.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\ARCoreIOSLifecycleManager.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\ARPrestoCallbackManager.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\CloudServiceManager.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\ILifecycleManager.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\LifecycleManager.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Managers\TrackableManager.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\PointCloudPoint.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Session.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\SessionStatus.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\SessionStatusExtensions.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Trackable.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\TrackableHit.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\TrackableHitFlags.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\TrackableQueryFilter.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\TrackingState.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ARCoreProjectSettings.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ARDebug.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ConversionHelper.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\DllImportNoop.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\IntPtrEqualityComparer.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\MarshalingHelper.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ShellHelper.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\SuppressMemoryAllocationErrorAttribute.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ThrottledLogMessage.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPAnchor.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSessionStatus.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
+    <Compile Include="Assets\Scripts\ARController.cs" />
     <Compile Include="Assets\Scripts\BrowserView.cs" />
-    <Compile Include="Assets\Scripts\HitTest.cs" />
-    <Compile Include="Assets\Scripts\SpeechController.cs" />
     <Compile Include="Assets\Scripts\UnityThread.cs" />
+    <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
+    <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
+    <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
+    <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PointCloud.shader" />
+    <None Include="Assets\GoogleARCore\Examples\ComputerVision\Materials\EdgeDetectionBackground.shader" />
+    <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileSpecularWithLightEstimation.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -75,30 +218,6 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.FaceSubsystem">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.FaceSubsystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Subsystem.Registration">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARFoundation.Editor">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARFoundation">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARExtensions">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.ARExtensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARExtensions.Editor">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.ARExtensions.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARCore">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARCore.Editor">
-      <HintPath>/Users/matthewhallberg/GoogleAR/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2018.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

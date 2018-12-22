@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="__arcore_cancel">Άκυρο</string>
-    <string name="__arcore_continue">Συνέχεια</string>
-    <string name="__arcore_install_app">Αυτή η εφαρμογή απαιτεί την τελευταία έκδοση του ARCore.</string>
-    <string name="__arcore_install_feature">Αυτή η λειτουργία απαιτεί την τελευταία έκδοση του ARCore.</string>
-    <string name="__arcore_installing">Εγκατάσταση ARCoree…</string>
-</resources>
