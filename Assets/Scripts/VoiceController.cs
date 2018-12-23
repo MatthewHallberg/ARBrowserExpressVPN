@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class VoiceController : MonoBehaviour {
 
     public BrowserView browser;
-    public Text debugText;
 
     AndroidJavaObject activity;
     AndroidJavaObject plugin;
@@ -29,14 +28,11 @@ public class VoiceController : MonoBehaviour {
     }
 
     public void OnVoiceResult(string recognizedText) {
-//        browser.ProcessQuery(result[0]);
-        debugText.text = recognizedText;
+        browser.ProcessQuery(recognizedText);
+        Debug.Log(recognizedText);
     }
 
     public void GetSpeech() {
-        //play loading animation
-        //      AnimLoading.Instance.ShouldLoad(true);
-
         // Calls the function from the jar file
         activity.Call("runOnUiThread", new AndroidJavaRunnable(() => {
             plugin.Call("StartSpeaking");

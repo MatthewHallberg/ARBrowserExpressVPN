@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Dec 23 00:52:09 EST 2018
+#Sun Dec 23 00:56:38 EST 2018
 124.path=lib/x86_64/libarcore_unity_api.so
 60.set=NATIVE_RESOURCE
 52.set=NATIVE_RESOURCE
