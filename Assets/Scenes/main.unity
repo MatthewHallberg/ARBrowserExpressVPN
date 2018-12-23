@@ -972,7 +972,7 @@ GameObject:
   - component: {fileID: 1569331665}
   - component: {fileID: 1569331666}
   m_Layer: 0
-  m_Name: VoiceToText
+  m_Name: VoiceController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1005,6 +1005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   browser: {fileID: 1371449356}
+  debugText: {fileID: 1717983909}
 --- !u!1 &1717983906
 GameObject:
   m_ObjectHideFlags: 0

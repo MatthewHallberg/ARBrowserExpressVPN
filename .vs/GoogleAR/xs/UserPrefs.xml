@@ -1,10 +1,7 @@
 ﻿<Properties StartupConfiguration="{451D088F-F008-01CA-154E-93F7798C1F85}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/VoiceController.cs">
     <Files>
-      <File FileName="Assets/Scripts/ARController.cs" Line="16" Column="24" />
-      <File FileName="Assets/Scripts/VoiceController.cs" Line="9" Column="26" />
-      <File FileName="Assets/Scripts/AnimLoading.cs" Line="28" Column="17" />
-      <File FileName="Assets/Scripts/BrowserView.cs" Line="29" Column="10" />
+      <File FileName="Assets/Scripts/VoiceController.cs" Line="23" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
