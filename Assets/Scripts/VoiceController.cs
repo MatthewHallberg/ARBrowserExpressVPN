@@ -3,8 +3,6 @@ using UnityEngine.UI;
 
 public class VoiceController : MonoBehaviour {
 
-    public BrowserView browser;
-
     AndroidJavaObject activity;
     AndroidJavaObject plugin;
 
@@ -28,8 +26,13 @@ public class VoiceController : MonoBehaviour {
     }
 
     public void OnVoiceResult(string recognizedText) {
-        browser.ProcessQuery(recognizedText);
         Debug.Log(recognizedText);
+        SceneController.Instance.OnResultRecieved(recognizedText);
+    }
+
+    public void OnErrorResult(string error) {
+        Debug.Log(error);
+        SceneController.Instance.OnErrorRecieved(error);
     }
 
     public void GetSpeech() {
