@@ -2,7 +2,7 @@ Android
 PlayerPath?
 /Users/matthewhallberg/Desktop/arTest.apk
 SceneListBegin?
-Assets/Scenes/testVoice.unity
+Assets/Scenes/main.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown

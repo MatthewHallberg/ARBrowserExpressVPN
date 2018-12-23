@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/testVoice.unity
-    guid: b4abaa849a80e47d0880c9d873eea9d6
+    path: Assets/Scenes/main.unity
+    guid: 50e39ba07c2844a0182a6e43823d7ddf
   m_configObjects: {}
