@@ -319,3 +319,4 @@ ae91c545dea6ac849dd81c4b660c68ca Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 7738c48cdd1eb861b909cfe45c6c810b Assembly-CSharp.dll:.EditorController
+f9378965fa814137f133843b7aa3b998 Assembly-CSharp.dll:MK.Glow.MKGlowFree

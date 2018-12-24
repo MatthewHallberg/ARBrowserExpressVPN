@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="__arcore_cancel">Atcelt</string>
-    <string name="__arcore_continue">Tālāk</string>
-    <string name="__arcore_install_app">Lai izmantotu šo lietojumprogrammu, ir nepieciešama jaunākā ARCore versija.</string>
-    <string name="__arcore_install_feature">Lai izmantotu šo funkciju, ir nepieciešama jaunākā ARCore versija.</string>
-    <string name="__arcore_installing">Notiek ARCore instalēšana…</string>
-</resources>
