@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class AnimLoading : MonoBehaviour {
 
     public Transform imgLoading;
-    public GameObject SectionLoading;
+    public Transform sectionLoading;
+    public TextMeshPro TMPtext;
 
     float rotateSpeed = 300;
     Vector3 axis = new Vector3(0, 0, 1);
@@ -25,12 +27,13 @@ public class AnimLoading : MonoBehaviour {
         DontDestroyOnLoad(this.gameObject);
     }
 
-    public void ShouldLoad(bool load) {
-        SectionLoading.SetActive(load);
+    public void ShouldLoad(bool load, string text) {
+        TMPtext.text = text;
+        sectionLoading.gameObject.SetActive(load);
     }
 
     void Update() {
-        if (SectionLoading.activeSelf) {
+        if (sectionLoading.gameObject.activeSelf) {
             imgLoading.Rotate(axis * Time.deltaTime * rotateSpeed);
         }
     }

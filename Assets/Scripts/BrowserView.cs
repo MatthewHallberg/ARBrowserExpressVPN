@@ -13,23 +13,26 @@ public class BrowserView : MonoBehaviour {
     const string URI = "http://198.252.105.8:3000/getImage";
 
     public Material screenMat;
+    public Texture whiteTex;
 
     Texture2D tempTex;
 
     private void Start() {
         tempTex = new Texture2D(2, 2);
+        VisitGoogle();
     }
 
     public void ProcessQuery(string query) {
         query = query.ToLower();
-        if (query.Equals("google") || query.Equals("home")) {
+        //start loading animation
+        AnimLoading.Instance.ShouldLoad(true,query);
+        screenMat.mainTexture = whiteTex;
+        //start loading page
+        if (query.Equals("google") || query.Equals("home") || query.Equals("search")) {
             VisitGoogle();
         } else {
             SearchGoogle(query);
         }
-
-        //stop loading animation
-        AnimLoading.Instance.ShouldLoad(false);
     }
 
     void VisitGoogle() {
@@ -37,7 +40,8 @@ public class BrowserView : MonoBehaviour {
     }
 
     void SearchGoogle(string query) {
-        StartCoroutine(GetImageFromURL(GOOGLE_SEARCH + query));
+        string currUrl = GOOGLE_SEARCH + query;
+        StartCoroutine(GetImageFromURL(currUrl));
     }
 
     IEnumerator GetImageFromURL(string url) {
@@ -48,8 +52,8 @@ public class BrowserView : MonoBehaviour {
             Debug.Log(www.error);
         } else {
             tempTex.LoadImage(www.downloadHandler.data);
-            tempTex.EncodeToPNG();
             screenMat.mainTexture = tempTex;
+            AnimLoading.Instance.ShouldLoad(false, "");
         }
     }
 }

@@ -1,7 +1,10 @@
 ﻿<Properties StartupConfiguration="{451D088F-F008-01CA-154E-93F7798C1F85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraController.cs">
     <Files>
-      <File FileName="Assets/Scripts/SceneController.cs" Line="14" Column="19" />
+      <File FileName="Assets/Scripts/SceneController.cs" Line="29" Column="28" />
+      <File FileName="Assets/Scripts/BrowserView.cs" Line="29" Column="42" />
+      <File FileName="Assets/Scripts/AnimLoading.cs" Line="36" Column="52" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="5" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
