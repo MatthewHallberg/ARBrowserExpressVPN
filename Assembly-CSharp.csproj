@@ -203,6 +203,7 @@
     <Compile Include="Assets\Scripts\ARController.cs" />
     <Compile Include="Assets\Scripts\BrowserView.cs" />
     <Compile Include="Assets\Scripts\EditorController.cs" />
+    <Compile Include="Assets\Scripts\LinkMenu.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\UnityThread.cs" />
     <Compile Include="Assets\Scripts\VoiceController.cs" />

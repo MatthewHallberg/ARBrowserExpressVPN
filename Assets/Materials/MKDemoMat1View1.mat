@@ -30,8 +30,8 @@ Material:
     m_Floats:
     - _MKGlowOffSet: 0
     - _MKGlowPower: 5
-    - _MKGlowTexStrength: 7.26
+    - _MKGlowTexStrength: 10
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 0.627451}
     - _MKGlowColor: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 0.5803922}
-    - _MKGlowTexColor: {r: 0.042675316, g: 0.0460128, b: 0.066037714, a: 0.28627452}
+    - _MKGlowTexColor: {r: 0.030482374, g: 0.03326361, b: 0.047169805, a: 0.28627452}

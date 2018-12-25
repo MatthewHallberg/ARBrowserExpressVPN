@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{451D088F-F008-01CA-154E-93F7798C1F85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BrowserView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LinkMenu.cs">
     <Files>
       <File FileName="Assets/Scripts/BrowserView.cs" Line="60" Column="18" />
+      <File FileName="Assets/Scripts/LinkMenu.cs" Line="27" Column="68" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
