@@ -19,12 +19,7 @@ public class AnimLoading : MonoBehaviour {
     }
 
     private void Awake() {
-        if (_instance != null && _instance != this) {
-            Destroy(this.gameObject);
-            return;
-        }
         _instance = this;
-        DontDestroyOnLoad(this.gameObject);
     }
 
     public void ShouldLoad(bool load, string text) {

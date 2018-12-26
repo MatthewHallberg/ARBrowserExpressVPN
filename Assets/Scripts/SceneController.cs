@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class SceneController : MonoBehaviour {
 
-    public BrowserView browser;
+    public static SceneController Instance { get; private set; }
+
+    public BrowserController browser;
     public VoiceController voiceController;
+
+    public Transform linkParent;
 
     public Animation speechButtonAnim;
 
-    public static SceneController Instance { get; private set; }
+    public Material screenMat;
+    public Texture loadingTexture;
 
     bool canSearch = true;
 
@@ -17,6 +22,7 @@ public class SceneController : MonoBehaviour {
         Instance = this;
     }
 
+    //call to plugin to start recognizing speech input
     public void StartRecognizingSpeech() {
         if (canSearch) {
             canSearch = false;
@@ -25,21 +31,47 @@ public class SceneController : MonoBehaviour {
         }
     }
 
+    //voice result receieved
     public void OnResultRecieved(string result) {
         GotGenericResult();
+        //start loading animation
+        AnimLoading.Instance.ShouldLoad(true, result);
+        screenMat.mainTexture = loadingTexture;
+        //destroy current links
+        foreach (Transform child in linkParent) {
+            Destroy(child.gameObject);
+        }
+        //load browser image
+        StopAllCoroutines();
         browser.ProcessQuery(result);
     }
-
+    //voice error recieved
     public void OnErrorRecieved(string error) {
         GotGenericResult();
     }
 
-    void GotGenericResult() {
-        canSearch = true;
-        StopButtonAnim();
+    public void LoadMainTexture(byte[] imageBytes) {
+        Texture2D tempTex = new Texture2D(1024, 768);
+        tempTex.LoadImage(imageBytes);
+        screenMat.mainTexture = tempTex;
+        AnimLoading.Instance.ShouldLoad(false, "");
     }
 
-    void StopButtonAnim() {
+    public void LoadLink(byte[] imageBytes) {
+        StartCoroutine(LoadLinkRoutine(imageBytes));
+    }
+
+    IEnumerator LoadLinkRoutine(byte[] imageBytes) {
+        yield return new WaitForEndOfFrame();
+        GameObject link = Instantiate(Resources.Load("Link") as GameObject, linkParent);
+        Texture2D tempTex = new Texture2D(1024, 768);
+        tempTex.LoadImage(imageBytes);
+        link.GetComponent<Renderer>().material.mainTexture = tempTex;
+    }
+
+    //stop playing voice button animation
+    void GotGenericResult() {
+        canSearch = true;
         speechButtonAnim["buttonAnimation"].time = 0;
         speechButtonAnim.Sample();
         speechButtonAnim.Stop();

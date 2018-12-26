@@ -25,11 +25,19 @@ public class VoiceController : MonoBehaviour {
         }));
     }
 
+    /// <summary>
+    /// gets called via SendMessage from the android plugin
+    /// </summary>
+    /// <param name="recognizedText">recognizedText.</param>
     public void OnVoiceResult(string recognizedText) {
         Debug.Log(recognizedText);
         SceneController.Instance.OnResultRecieved(recognizedText);
     }
 
+    /// <summary>
+    /// gets called via SendMessage from the android plugin
+    /// </summary>
+    /// <param name="error">Error.</param>
     public void OnErrorResult(string error) {
         Debug.Log(error);
         SceneController.Instance.OnErrorRecieved(error);

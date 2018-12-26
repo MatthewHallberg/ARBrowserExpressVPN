@@ -9,7 +9,6 @@ public class LinkMenu : MonoBehaviour {
 
     private void OnTransformChildrenChanged() {
         bool isEven = transform.childCount % 2 == 0;
-        print(isEven);
         foreach (Transform child in this.transform) {
             if (isEven && child.GetSiblingIndex() == 0) {
                 child.localPosition = centerPos;
