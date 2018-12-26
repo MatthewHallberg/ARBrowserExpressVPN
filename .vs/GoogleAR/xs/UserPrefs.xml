@@ -6,7 +6,7 @@
       <File FileName="Assets/Scripts/AnimLoading.cs" Line="22" Column="26" />
       <File FileName="Assets/Scripts/LinkMenu.cs" Line="11" Column="53" />
       <File FileName="Assets/Scripts/VoiceController.cs" Line="35" Column="6" />
-      <File FileName="Assets/Scripts/LinkBehavior.cs" Line="9" Column="70" />
+      <File FileName="Assets/Scripts/LinkBehavior.cs" Line="25" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
