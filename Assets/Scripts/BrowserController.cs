@@ -13,8 +13,10 @@ public class BrowserController : MonoBehaviour {
     const string URI_IMAGE = "http://198.252.105.8:3000/getImage";
     const string URI_LINKS = "http://198.252.105.8:12001";
 
+    public WebController webController;
+
     private void Start() {
-        VisitGoogle();
+        //VisitGoogle();
     }
 
     public void ProcessQuery(string query) {
@@ -29,12 +31,14 @@ public class BrowserController : MonoBehaviour {
     }
 
     void VisitGoogle() {
-        StartCoroutine(GetImageFromURL("http://www.google.com/", true,string.Empty));
+        //StartCoroutine(GetImageFromURL("http://www.google.com/", true,string.Empty));
+        webController.GetImageFromURL("http://www.google.com/");
     }
 
     void SearchGoogle(string query) {
         string currUrl = GOOGLE_SEARCH + query;
-        StartCoroutine(GetImageFromURL(currUrl,true,query));
+        //StartCoroutine(GetImageFromURL(currUrl,true,query));
+        webController.GetImageFromURL(currUrl);
     }
 
     IEnumerator GetLinksFromQuery(string query) {

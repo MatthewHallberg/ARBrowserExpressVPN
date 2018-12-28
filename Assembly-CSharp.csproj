@@ -208,6 +208,7 @@
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\UnityThread.cs" />
     <Compile Include="Assets\Scripts\VoiceController.cs" />
+    <Compile Include="Assets\Scripts\WebController.cs" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\_MK\MKGlowFree\Shader\Variants_SelectiveMode\Illumin\MK_Illumin-Glossy.shader" />
     <None Include="Assets\_MK\MKGlowFree\Shader\Render\MKGlowBlurInc.cginc" />

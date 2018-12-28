@@ -351,3 +351,7 @@
 /Users/matthewhallberg/GoogleAR/obj/Debug/Assembly-CSharp.csproj.CopyComplete
 /Users/matthewhallberg/GoogleAR/obj/Debug/Assembly-CSharp.dll
 /Users/matthewhallberg/GoogleAR/obj/Debug/Assembly-CSharp.pdb
+/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/Boo.Lang.dll
+/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEditor.UI.dll
+/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEditor.UI.dll.mdb
+/Users/matthewhallberg/GoogleAR/Temp/bin/Debug/UnityEditor.UI.xml
