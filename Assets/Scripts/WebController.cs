@@ -5,8 +5,11 @@ using UnityEngine.UI;
 
 public class WebController : MonoBehaviour {
 
+    public bool shouldUpdate = false;
+
     class AndroidPluginCallback : AndroidJavaProxy {
         public AndroidPluginCallback() : base("com.example.matthew.webViewPlugin.PluginCallback") { }
+        public WebController webController;
 
         public void onFrameUpdate(AndroidJavaObject bytesObj) {
             Debug.Log("~~~~~~ENTER callback onSuccess!!!!!!! From Unity!");
@@ -14,11 +17,7 @@ public class WebController : MonoBehaviour {
             AndroidJavaObject bufferObject = bytesObj.Get<AndroidJavaObject>("Buffer");
             byte[] bytes = AndroidJNIHelper.ConvertFromJNIArray<byte[]>(bufferObject.GetRawObject());
 
-            RawImage rawImage = GameObject.Find("RawImage").GetComponent<RawImage>();
-            Texture2D newTex = new Texture2D(200, 300);
-            newTex.LoadImage(bytes);
-            rawImage.texture = newTex;
-            Debug.Log("~~~~~LENGTH: " + bytes.Length);
+            UnityThread.executeInUpdate(() => webController.SetImageFromBytes(bytes));
         }
     }
 
@@ -27,10 +26,12 @@ public class WebController : MonoBehaviour {
     AndroidJavaObject data;
 
     private void Start() {
+        UnityThread.initUnityThread();
         InitPlugin();
     }
 
     void InitPlugin() {
+
         AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 
         activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
@@ -43,21 +44,28 @@ public class WebController : MonoBehaviour {
         activity.Call("runOnUiThread", new AndroidJavaRunnable(() => {
             plugin.Call("init");
         }));
+
+        //set callback
+        AndroidPluginCallback androidPluginCallback = new AndroidPluginCallback {webController = this};
+        activity.Call("runOnUiThread", new AndroidJavaRunnable(() => {
+            plugin.Call("SetUnityBitmapCallback", androidPluginCallback);
+        }));
     }
 
-    /// <summary>
-    /// gets called via SendMessage from the android plugin
-    /// </summary>
-    /// <param name="imageString">recognizedText.</param>
-    public void OnWebImageReceived(string imageString) {
-        Debug.Log("Get image..." + imageString);
-        //SceneController.Instance.OnResultRecieved(recognizedText);
+    void SetImageFromBytes(byte[] bytes) {
+        RawImage rawImage = GameObject.Find("RawImage").GetComponent<RawImage>();
+        Texture2D newTex = new Texture2D(0, 0,TextureFormat.ARGB32, false);
+        newTex.LoadImage(bytes);
+        newTex.Apply();
+        rawImage.texture = newTex;
+        Debug.Log("~~~~~LENGTH From Unity: " + bytes.Length);
+        Debug.Log("~~~~Width: " + rawImage.texture.width + " + " + rawImage.texture.height);
     }
 
     public void GetImageFromURL(string url) {
         // Calls the function from the jar file
         activity.Call("runOnUiThread", new AndroidJavaRunnable(() => {
-            plugin.Call("GetBitmap", "http://www.area51.org/");
+            plugin.Call("GetBitmap", "http://www.area51.com/");
         }));
     }
 }
