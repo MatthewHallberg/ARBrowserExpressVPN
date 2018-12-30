@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="__arcore_cancel">Otkaži</string>
+    <string name="__arcore_continue">Nastavi</string>
+    <string name="__arcore_install_app">Ova aplikacija zahteva najnoviju verziju ARCore-a.</string>
+    <string name="__arcore_install_feature">Ova funkcija zahteva najnoviju verziju ARCore-a.</string>
+    <string name="__arcore_installing">Instalira se ARCore…</string>
+</resources>

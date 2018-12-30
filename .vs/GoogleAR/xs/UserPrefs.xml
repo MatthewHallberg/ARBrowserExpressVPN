@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{451D088F-F008-01CA-154E-93F7798C1F85}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/WebController.cs">
     <Files>
-      <File FileName="Assets/Scripts/WebController.cs" Line="68" Column="64" />
+      <File FileName="Assets/Scripts/WebController.cs" Line="61" Column="65" />
       <File FileName="Assets/Scripts/SceneController.cs" Line="35" Column="17" />
-      <File FileName="Assets/Scripts/BrowserController.cs" Line="35" Column="23" />
+      <File FileName="Assets/Scripts/BrowserController.cs" Line="69" Column="57" />
+      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="31" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

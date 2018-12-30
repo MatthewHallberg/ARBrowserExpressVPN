@@ -53,6 +53,7 @@ public class SceneController : MonoBehaviour {
     public void LoadMainTexture(byte[] imageBytes) {
         Texture2D tempTex = new Texture2D(1024, 768);
         tempTex.LoadImage(imageBytes);
+        Debug.Log("WIDTH: " + tempTex.width + " HEIGHT: " + tempTex.height);
         screenMat.mainTexture = tempTex;
         AnimLoading.Instance.ShouldLoad(false, "");
     }

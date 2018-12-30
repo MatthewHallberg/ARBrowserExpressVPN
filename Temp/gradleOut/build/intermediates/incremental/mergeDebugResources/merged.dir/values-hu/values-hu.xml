@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="__arcore_cancel">Mégse</string>
+    <string name="__arcore_continue">Folytatás</string>
+    <string name="__arcore_install_app">Az alkalmazás futtatásához az ARCore újabb verziójára van szükség.</string>
+    <string name="__arcore_install_feature">A funkció használatához az ARCore legújabb verziójára van szükség.</string>
+    <string name="__arcore_installing">Az ARCore telepítése…</string>
+</resources>

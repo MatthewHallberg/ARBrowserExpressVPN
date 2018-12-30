@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/matthewhallberg/GoogleAR/Temp/gradleOut/build/intermediates/incremental/mergeDebugResources/merged.dir/values-he/values-he.xml",
+            "map": [
+                {
+                    "source": "/Users/matthewhallberg/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/3059932990f3835051e628943045e1b7/res/values-he/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,236,283,395,490",
+                        "endColumns": "45,46,111,94,64",
+                        "endOffsets": "235,282,394,489,554"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,105,156,272,371",
+                        "endColumns": "49,50,115,98,68",
+                        "endOffsets": "100,151,267,366,435"
+                    }
+                }
+            ]
+        }
+    ]
+}

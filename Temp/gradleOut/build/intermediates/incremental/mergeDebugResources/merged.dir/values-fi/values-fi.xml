@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="__arcore_cancel">Peruuta</string>
+    <string name="__arcore_continue">Jatka</string>
+    <string name="__arcore_install_app">Tämän sovelluksen käyttöön vaaditaan ARCoren uusin versio.</string>
+    <string name="__arcore_install_feature">Tämän ominaisuuden käyttöön vaaditaan ARCoren uusin versio.</string>
+    <string name="__arcore_installing">Asennetaan ARCorea…</string>
+</resources>

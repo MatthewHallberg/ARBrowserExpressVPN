@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class WebController : MonoBehaviour {
 
-    public bool shouldUpdate = false;
-
     class AndroidPluginCallback : AndroidJavaProxy {
         public AndroidPluginCallback() : base("com.example.matthew.webViewPlugin.PluginCallback") { }
         public WebController webController;
@@ -53,19 +51,14 @@ public class WebController : MonoBehaviour {
     }
 
     void SetImageFromBytes(byte[] bytes) {
-        RawImage rawImage = GameObject.Find("RawImage").GetComponent<RawImage>();
-        Texture2D newTex = new Texture2D(0, 0,TextureFormat.ARGB32, false);
-        newTex.LoadImage(bytes);
-        newTex.Apply();
-        rawImage.texture = newTex;
         Debug.Log("~~~~~LENGTH From Unity: " + bytes.Length);
-        Debug.Log("~~~~Width: " + rawImage.texture.width + " + " + rawImage.texture.height);
+        SceneController.Instance.LoadMainTexture(bytes);
     }
 
     public void GetImageFromURL(string url) {
         // Calls the function from the jar file
         activity.Call("runOnUiThread", new AndroidJavaRunnable(() => {
-            plugin.Call("GetBitmap", "http://www.area51.com/");
+            plugin.Call("GetBitmap", url);
         }));
     }
 }

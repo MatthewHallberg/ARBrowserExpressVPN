@@ -206,7 +206,7 @@ dd6bb3fadbbfa1e1e7a8cd085b2b8f32 Assembly-CSharp.dll:.LinkBehavior
 dcb6d0d8359789e3a3d7095f4fd775a6 Assembly-CSharp.dll:.BrowserController
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:GoogleARCore.Examples.CloudAnchors.AnchorController
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
-698f73dd553714e5086a768045727552 Assembly-CSharp.dll:.WebController
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.WebController
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.VoiceController
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
