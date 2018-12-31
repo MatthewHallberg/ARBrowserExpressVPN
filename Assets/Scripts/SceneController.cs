@@ -8,18 +8,28 @@ public class SceneController : MonoBehaviour {
 
     public BrowserController browser;
     public VoiceController voiceController;
+    public SecondMonitorBehavior secondMonitor;
 
     public Transform linkParent;
 
     public Animation speechButtonAnim;
 
     public Material screenMat;
+
     public Texture loadingTexture;
 
     bool canSearch = true;
 
     private void Awake() {
         Instance = this;
+    }
+
+    private void OnEnable() {
+        VoiceController.resultRecieved += OnResultRecieved;
+    }
+
+    private void OnDisable() {
+        VoiceController.resultRecieved -= OnResultRecieved;
     }
 
     //call to plugin to start recognizing speech input
@@ -51,11 +61,16 @@ public class SceneController : MonoBehaviour {
     }
 
     public void LoadMainTexture(byte[] imageBytes) {
+        StartCoroutine(LoadMainTextureRoutine(imageBytes));
+    }
+
+    IEnumerator LoadMainTextureRoutine(byte[] imageBytes) {
         Texture2D tempTex = new Texture2D(1024, 768);
         tempTex.LoadImage(imageBytes);
         Debug.Log("WIDTH: " + tempTex.width + " HEIGHT: " + tempTex.height);
         screenMat.mainTexture = tempTex;
         AnimLoading.Instance.ShouldLoad(false, "");
+        yield return new WaitForSeconds(1f);
     }
 
     public void LoadLink(byte[] imageBytes) {
@@ -68,6 +83,7 @@ public class SceneController : MonoBehaviour {
         Texture2D tempTex = new Texture2D(1024, 768);
         tempTex.LoadImage(imageBytes);
         link.GetComponent<Renderer>().material.mainTexture = tempTex;
+        yield return new WaitForSeconds(1f);
     }
 
     //stop playing voice button animation
@@ -76,5 +92,6 @@ public class SceneController : MonoBehaviour {
         speechButtonAnim["buttonAnimation"].time = 0;
         speechButtonAnim.Sample();
         speechButtonAnim.Stop();
+        secondMonitor.DeactivateMonitor();
     }
 }

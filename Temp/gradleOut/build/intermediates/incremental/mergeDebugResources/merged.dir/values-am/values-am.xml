@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="__arcore_cancel">ይቅር</string>
-    <string name="__arcore_continue">ቀጥል</string>
-    <string name="__arcore_install_app">ይህ መተግበሪያ የቅርብ ጊዜው የARCore ስሪት ያስፈልገዋል።</string>
-    <string name="__arcore_install_feature">ይህ ባህሪ የቅርብ ጊዜው የARCore ስሪት ያስፈልገዋል።</string>
-    <string name="__arcore_installing">ARCoreን በመጫን ላይ…</string>
-</resources>

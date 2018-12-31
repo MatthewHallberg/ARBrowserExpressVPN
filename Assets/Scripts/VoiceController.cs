@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 public class VoiceController : MonoBehaviour {
 
+    public delegate void OnResultRecieved(string result);
+    public static OnResultRecieved resultRecieved;
+
     AndroidJavaObject activity;
     AndroidJavaObject plugin;
 
@@ -31,7 +34,7 @@ public class VoiceController : MonoBehaviour {
     /// <param name="recognizedText">recognizedText.</param>
     public void OnVoiceResult(string recognizedText) {
         Debug.Log(recognizedText);
-        SceneController.Instance.OnResultRecieved(recognizedText);
+        resultRecieved?.Invoke(recognizedText);
     }
 
     /// <summary>

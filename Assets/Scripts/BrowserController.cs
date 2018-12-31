@@ -1,22 +1,18 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.UI;
-using System.Net.Sockets;
-using System.IO;
+using System.Linq;
+using System.Collections.Generic;
 
 public class BrowserController : MonoBehaviour {
 
     const string GOOGLE_SEARCH = "https://www.google.com/search?q=";
     const string URI_IMAGE = "http://198.252.105.8:3000/getImage";
     const string URI_LINKS = "http://198.252.105.8:12001";
-
-    public WebController webController;
-
+    
     private void Start() {
-        //VisitGoogle();
+        VisitGoogle();
     }
 
     public void ProcessQuery(string query) {
@@ -31,17 +27,16 @@ public class BrowserController : MonoBehaviour {
     }
 
     void VisitGoogle() {
-        //StartCoroutine(GetImageFromURL("http://www.google.com/", true,string.Empty));
-        webController.GetImageFromURL("http://www.google.com/");
+        StartCoroutine(GetImageFromURL("http://www.google.com/", true,string.Empty));
     }
 
     void SearchGoogle(string query) {
         string currUrl = GOOGLE_SEARCH + query;
-        //StartCoroutine(GetImageFromURL(currUrl,true,query));
-        webController.GetImageFromURL(currUrl);
+        StartCoroutine(GetImageFromURL(currUrl, true, query));
     }
 
     IEnumerator GetLinksFromQuery(string query) {
+        yield return new WaitForEndOfFrame();
         UnityWebRequest www = UnityWebRequest.Get(URI_LINKS);
         www.SetRequestHeader("head", UnityWebRequest.EscapeURL(query));
         yield return www.SendWebRequest();
@@ -49,14 +44,27 @@ public class BrowserController : MonoBehaviour {
             Debug.Log(www.error);
         } else {
             string[] links = www.downloadHandler.text.Split(',');
-            foreach (string link in links) {
+            List<string> linkList = links.Distinct().ToList();
+            //for whatever reason we always get this link empty so lets add the query
+            string urban = "www.urbandictionary.com/define.php";
+            if (linkList.Contains(urban)){
+                int index = linkList.IndexOf(urban);
+                linkList[index] += "?term=" + query;
+            }
+            foreach (string link in linkList) {
                 if (link.Length > 0) {
+                    print(link);
                     yield return StartCoroutine(GetImageFromURL(link, false, string.Empty));
+                    yield return new WaitForEndOfFrame();
                 }
             }
         }
     }
 
+    /// <summary>
+    /// Gets image from node.js server left here incase I want to go back to this later!
+    /// </summary>
+    /// <returns>The image from URL.</returns>
     IEnumerator GetImageFromURL(string url,bool isMain, string query) {
         UnityWebRequest www = UnityWebRequest.Get(URI_IMAGE);
         www.SetRequestHeader("head", url);

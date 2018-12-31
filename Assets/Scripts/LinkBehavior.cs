@@ -24,6 +24,6 @@ public class LinkBehavior : MonoBehaviour {
         audioSource.PlayOneShot(clickSound);
         transform.localScale = originalSize / 2f;
         Texture thisTexture = GetComponent<Renderer>().material.mainTexture;
-        SceneController.Instance.screenMat.mainTexture = thisTexture;
+        SceneController.Instance.secondMonitor.ActivateMonitor(thisTexture);
     }
 }

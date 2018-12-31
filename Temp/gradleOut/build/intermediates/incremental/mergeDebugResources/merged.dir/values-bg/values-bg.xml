@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="__arcore_cancel">Отказ</string>
-    <string name="__arcore_continue">Напред</string>
-    <string name="__arcore_install_app">За това приложение се изисква най-новата версия на ARCore.</string>
-    <string name="__arcore_install_feature">За тази функция се изисква най-новата версия на ARCore.</string>
-    <string name="__arcore_installing">ARCore се инсталира…</string>
-</resources>
