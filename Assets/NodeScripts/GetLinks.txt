@@ -45,4 +45,4 @@ http.createServer(function (req, response) {
 	}); 
 }).listen(port,'198.252.105.8');
 
-console.log("198.252.105.8:" + port);
+console.log('Starting Node Server');
