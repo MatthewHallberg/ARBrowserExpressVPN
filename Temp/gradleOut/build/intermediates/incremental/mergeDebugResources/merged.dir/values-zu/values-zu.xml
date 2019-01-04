@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="__arcore_cancel">Khansela</string>
+    <string name="__arcore_continue">Qhubeka</string>
+    <string name="__arcore_install_app">Lolu hlelo lokusebenza ludinga inguqulo yakamuva ye-ARCore.</string>
+    <string name="__arcore_install_feature">Lesi sici sidinga inguqulo yakamuva ye-ARCore.</string>
+    <string name="__arcore_installing">Ifaka i-ARCore…</string>
+</resources>

@@ -8,10 +8,15 @@ using System.Collections.Generic;
 public class BrowserController : MonoBehaviour {
 
     const string GOOGLE_SEARCH = "https://www.google.com/search?q=";
-    const string URI_IMAGE = "http://198.252.105.8:3000/getImage";
-    const string URI_LINKS = "http://198.252.105.8:12001";
-    
+    const string IP_ADDRESS = "198.252.105.8";
+    const string IMAGE = ":3000/getImage";
+    const string LINKS = ":12001";
+    string uri_links;
+    string uri_image;
+
     private void Start() {
+        uri_image = "http://" + IP_ADDRESS + IMAGE;
+        uri_links = "http://" + IP_ADDRESS + LINKS;
         VisitGoogle();
     }
 
@@ -37,7 +42,7 @@ public class BrowserController : MonoBehaviour {
 
     IEnumerator GetLinksFromQuery(string query) {
         yield return new WaitForEndOfFrame();
-        UnityWebRequest www = UnityWebRequest.Get(URI_LINKS);
+        UnityWebRequest www = UnityWebRequest.Get(uri_links);
         www.SetRequestHeader("head", UnityWebRequest.EscapeURL(query));
         yield return www.SendWebRequest();
         if (www.isNetworkError || www.isHttpError) {
@@ -66,7 +71,7 @@ public class BrowserController : MonoBehaviour {
     /// </summary>
     /// <returns>The image from URL.</returns>
     IEnumerator GetImageFromURL(string url,bool isMain, string query) {
-        UnityWebRequest www = UnityWebRequest.Get(URI_IMAGE);
+        UnityWebRequest www = UnityWebRequest.Get(uri_image);
         www.SetRequestHeader("head", url);
         yield return www.SendWebRequest();
         if (www.isNetworkError || www.isHttpError) {
